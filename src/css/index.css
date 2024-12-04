@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo");
+* {
+  font-family: "Heebo", sans-serif;
+}
+
+body {
+  background: #0d1116;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+body .header-container {
+  margin: 30px;
+}
+body .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background: linear-gradient(45deg, #372726, #3c4d61);
+  border-radius: 0 0 10px 10px;
+}
+body .navbar .logo {
+  background: linear-gradient(45deg, #f88f6f, #ffc6a3);
+  display: inline-block;
+  border-radius: 10px;
+}
+body .navbar .logo img {
+  width: 50px;
+  height: 50px;
+  padding: 12.5px;
+}
+body .navbar .navbar-links {
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+body .navbar .navbar-links .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+body .navbar .navbar-links .links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+body .navbar .navbar-links .links a:hover {
+  color: #f88f6f;
+}
+body .navbar .login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .navbar .login a {
+  padding: 12.5px;
+  color: #f88f6f;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+body .navbar .login a:hover {
+  color: #ffc6a3;
+}
+body .navbar .login .login-btn {
+  background: linear-gradient(45deg, #f88f6f, #ffc6a3);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+body .navbar .login .login-btn:hover {
+  background: #f88f6f;
+}
+body .navbar .login .signup-btn {
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  color: #f88f6f;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+body .navbar .login .signup-btn:hover {
+  background: #f88f6f;
+  color: #fff;
+}
+body .search .results .song-results-option,
+body .search .tracklist .song-results-option,
+body .playlist .results .song-results-option,
+body .playlist .tracklist .song-results-option {
+  display: flex;
+  max-width: 600px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #6b5857, #576576);
+  padding: 0.5em;
+  margin: 0.5em;
+}
+body .search .results .song-results-option .song-image,
+body .search .tracklist .song-results-option .song-image,
+body .playlist .results .song-results-option .song-image,
+body .playlist .tracklist .song-results-option .song-image {
+  max-width: 50px;
+  aspect-ratio: 1;
+  border-radius: 10px;
+}
+body .search .results .song-results-option .song-info,
+body .search .tracklist .song-results-option .song-info,
+body .playlist .results .song-results-option .song-info,
+body .playlist .tracklist .song-results-option .song-info {
+  vertical-align: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+body .search .results .song-results-option .song-info div,
+body .search .tracklist .song-results-option .song-info div,
+body .playlist .results .song-results-option .song-info div,
+body .playlist .tracklist .song-results-option .song-info div {
+  font-size: 18px;
+  text-align: left;
+}
+body .search .results .song-results-option .song-info div.song-artists,
+body .search .tracklist .song-results-option .song-info div.song-artists,
+body .playlist .results .song-results-option .song-info div.song-artists,
+body .playlist .tracklist .song-results-option .song-info div.song-artists {
+  font-size: 14px;
+  color: #ccc;
+}
+body .search .results .song-results-option .song-add-btn,
+body .search .results .song-results-option .song-remove-btn,
+body .search .tracklist .song-results-option .song-add-btn,
+body .search .tracklist .song-results-option .song-remove-btn,
+body .playlist .results .song-results-option .song-add-btn,
+body .playlist .results .song-results-option .song-remove-btn,
+body .playlist .tracklist .song-results-option .song-add-btn,
+body .playlist .tracklist .song-results-option .song-remove-btn {
+  margin-left: auto;
+  transition: all 2ms ease-in-out;
+}
+body .search .results .song-results-option .song-add-btn > svg,
+body .search .results .song-results-option .song-remove-btn > svg,
+body .search .tracklist .song-results-option .song-add-btn > svg,
+body .search .tracklist .song-results-option .song-remove-btn > svg,
+body .playlist .results .song-results-option .song-add-btn > svg,
+body .playlist .results .song-results-option .song-remove-btn > svg,
+body .playlist .tracklist .song-results-option .song-add-btn > svg,
+body .playlist .tracklist .song-results-option .song-remove-btn > svg {
+  max-width: 25px;
+  max-height: 25px;
+}
+body .search .results .song-results-option .song-add-btn > svg:hover,
+body .search .results .song-results-option .song-remove-btn > svg:hover,
+body .search .tracklist .song-results-option .song-add-btn > svg:hover,
+body .search .tracklist .song-results-option .song-remove-btn > svg:hover,
+body .playlist .results .song-results-option .song-add-btn > svg:hover,
+body .playlist .results .song-results-option .song-remove-btn > svg:hover,
+body .playlist .tracklist .song-results-option .song-add-btn > svg:hover,
+body .playlist .tracklist .song-results-option .song-remove-btn > svg:hover {
+  fill: #faa282;
+  cursor: pointer;
+}
+body .playlist:has(> .tracklist:empty) {
+  display: none;
+}
+
+.login-div {
+  font-size: x-large;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.6);
+  border: none;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  resize: none;
+  overflow: auto;
+  transition: all 0.25s ease-in-out;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  transition: all 0.25s ease-in-out;
+}
+input:hover,
+textarea:hover {
+  background-color: rgba(128, 128, 128, 0.8);
+}
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  opacity: 0;
+}
+input:hover::placeholder,
+textarea:hover::placeholder {
+  opacity: 0;
+}
+input:focus,
+textarea:focus {
+  background-color: rgba(128, 128, 128, 0.6);
+}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  opacity: 0;
+}
+input:focus::placeholder,
+textarea:focus::placeholder {
+  opacity: 0;
+}
+
+button {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  transition: all 0.25s ease-in-out;
+}
+button:hover {
+  background-color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */

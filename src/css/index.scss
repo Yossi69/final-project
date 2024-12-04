@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo");
+
+* {
+  font-family: "Heebo", sans-serif;
+}
+
+body {
+  background: #0d1116;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+
+  .header-container {
+    margin: 30px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: linear-gradient(45deg, #372726, #3c4d61);
+    border-radius: 0 0 10px 10px;
+
+    .logo {
+      background: linear-gradient(45deg, #f88f6f, #ffc6a3);
+      display: inline-block;
+      border-radius: 10px;
+
+      img {
+        width: 50px;
+        height: 50px;
+        padding: 12.5px;
+      }
+    }
+
+    .navbar-links {
+      display: inline-block;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 10px;
+
+      .links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 1.2rem;
+          font-weight: 500;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: #f88f6f;
+          }
+        }
+      }
+    }
+
+    .login {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        padding: 12.5px;
+        color: #f88f6f;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: #ffc6a3;
+        }
+      }
+
+      .login-btn {
+        background: linear-gradient(45deg, #f88f6f, #ffc6a3);
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background: #f88f6f;
+        }
+      }
+
+      .signup-btn {
+        background: #fff;
+        border: none;
+        border-radius: 10px;
+        color: #f88f6f;
+        font-size: 1.2rem;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background: #f88f6f;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .search,
+  .playlist {
+
+    .results,
+    .tracklist {
+      .song-results-option {
+        // Make sure everything is in the same line
+        display: flex;
+
+        // Make sure everything is in the same size
+        max-width: 600px;
+
+        // Horizontal alignment
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        // Round corners
+        border-radius: 20px;
+
+        // Create a nice looking background (which similar to the navbar background)
+        background: linear-gradient(45deg, #6b5857, #576576);
+
+        // Add distance between the results
+        padding: 0.5em;
+        margin: 0.5em;
+
+        .song-image {
+          // Make sure every coverart has the same small size
+          max-width: 50px;
+          aspect-ratio: 1;
+
+          // Round corners
+          border-radius: 10px;
+        }
+
+        .song-info {
+          // Vertical alignment
+          vertical-align: auto;
+          margin-top: auto;
+          margin-bottom: auto;
+
+          // Add distance from left
+          margin-left: 10px;
+
+          // Display the elements in a column
+          display: flex;
+          flex-direction: column;
+
+          div {
+            font-size: 18px;
+            text-align: left;
+
+            &.song-artists {
+              font-size: 14px;
+              color: #ccc;
+            }
+          }
+        }
+
+        .song-add-btn,
+        .song-remove-btn {
+          // Align to the right
+          margin-left: auto;
+
+          transition: all 2ms ease-in-out;
+
+          >svg {
+            // Make sure every coverart has the same small size
+            max-width: 25px;
+            max-height: 25px;
+
+            &:hover {
+              // Change the fill color to royal blue
+              fill: #faa282;
+
+              // Change the cursor
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // TODO: fix that
+  .playlist {
+
+    // if the tracklist is empty then display nothing
+    &:has(>.tracklist:empty) {
+      display: none;
+    }
+  }
+}
+
+.login-div {
+  font-size: x-large;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.6);
+  border: none;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  resize: none;
+  overflow: auto;
+  transition: all 0.25s ease-in-out;
+
+  &::placeholder {
+    opacity: 1;
+    transition: all 0.25s ease-in-out;
+  }
+
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.8);
+
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+
+  &:focus {
+    background-color: rgba(128, 128, 128, 0.6);
+
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+}
+
+button {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+}
